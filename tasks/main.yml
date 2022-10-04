@@ -2,12 +2,12 @@
 - block:
   - name: import gpg key
     rpm_key:
-      key: https://releases.usacloud.jp/usacloud/repos/GPG-KEY-usacloud
+      key: https://github.com/sacloud/usacloud/releases/latest/repos/GPG-KEY-usacloud
   - name: add repository
     yum_repository:
       name: usacloud
       description: usacloud
-      baseurl: https://releases.usacloud.jp/usacloud/repos/centos/$basearch
+      baseurl: https://github.com/sacloud/usacloud/releases/latest/repos/centos/$basearch
       gpgcheck: true
       file: usacloud
   - name: install usacloud
@@ -21,10 +21,10 @@
       name: apt-transport-https
   - name: import gpg key
     apt_key:
-      url: https://releases.usacloud.jp/usacloud/repos/GPG-KEY-usacloud
+      url: https://github.com/sacloud/usacloud/releases/latest/repos/GPG-KEY-usacloud
   - name: add repository
     apt_repository:
-      repo: deb https://releases.usacloud.jp/usacloud/repos/debian /
+      repo: deb https://github.com/sacloud/usacloud/releases/latest/repos/debian /
       filename: usacloud
   - name: install usacloud
     apt:
