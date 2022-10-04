@@ -21,7 +21,7 @@
       name: apt-transport-https
   - name: import gpg key
     apt_key:
-      url: https://github.com/sacloud/usacloud/releases/latest/repos/GPG-KEY-usacloud
+      url: https://releases.usacloud.jp/usacloud/repos/GPG-KEY-usacloud
   - name: add repository
     apt_repository:
       repo: deb https://github.com/sacloud/usacloud/releases/latest/repos/debian /
