@@ -2,7 +2,7 @@
 - block:
   - name: import gpg key
     rpm_key:
-      key: https://github.com/sacloud/usacloud/releases/latest/repos/GPG-KEY-usacloud
+      key: https://releases.usacloud.jp/usacloud/repos/GPG-KEY-usacloud
   - name: add repository
     yum_repository:
       name: usacloud
