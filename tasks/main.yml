@@ -24,7 +24,7 @@
       url: https://releases.usacloud.jp/usacloud/repos/GPG-KEY-usacloud
   - name: add repository
     apt_repository:
-      repo: deb https://github.com/sacloud/usacloud/releases/latest/repos/debian /
+      repo: deb https://github.com/sacloud/usacloud/releases/latest /
       filename: usacloud
   - name: install usacloud
     apt:
