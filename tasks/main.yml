@@ -7,7 +7,7 @@
     yum_repository:
       name: usacloud
       description: usacloud
-      baseurl: https://github.com/sacloud/usacloud/releases/latest/repos/centos/$basearch
+      baseurl: https://releases.usacloud.jp/usacloud/repos/centos/$basearch
       gpgcheck: true
       file: usacloud
   - name: install usacloud
